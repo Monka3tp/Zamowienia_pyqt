@@ -23,13 +23,14 @@ class MyForm(QDialog):
         rozmiar = 'Wybierz'
         platnosc = 'Wybierz'
         if self.ui.sButton.isChecked():
-            rozmiar = 'S'
+            # rozmiar = 'S'
+            rozmiar = self.ui.sButton.text()
         if self.ui.mButton.isChecked():
-            rozmiar = 'M'
+            rozmiar = self.ui.mButton.text()
         if self.ui.lButton.isChecked():
-            rozmiar = 'L'
+            rozmiar = self.ui.lButton.text()
         if self.ui.xlButton.isChecked():
-            rozmiar = 'XL'
+            rozmiar = self.ui.xlButton.text()
 
 
         if self.ui.kartaButton.isChecked():
